@@ -37,7 +37,7 @@ export default function Home(){
       <>
         <NavBar />
              <Container width='xl'>
-                 <Grid container >
+                 <Grid container spacing={15}>
                      { pokemons.map((pokemon ,key) => (
                      <Grid item xs={3} key={key}>
                      <PokemonCard name={pokemon.data.name} img={pokemon.data.sprites.front_default} />
